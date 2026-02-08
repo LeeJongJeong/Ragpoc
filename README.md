@@ -6,7 +6,7 @@ NotebookLM 스타일의 UI로 문서를 업로드하고 AI와 대화할 수 있�
 ## ✨ 주요 기능
 
 - **📄 다중 문서 지원**: TXT, PDF, DOCX 파일 업로드
-- **🔍 의미 기반 검색**: ChromaDB 벡터 데이터베이스
+- **🔍 의미 기반 검색**: Sentence Transformers + NumPy 코사인 유사도
 - **🤖 하이브리드 LLM**: OpenAI API + Ollama 동시 지원
 - **💬 실시간 채팅**: 문서 기반 질의응답
 - **🎨 NotebookLM 스타일 UI**: 다크테마, 글래스모피즘
@@ -15,7 +15,8 @@ NotebookLM 스타일의 UI로 문서를 업로드하고 AI와 대화할 수 있�
 
 | 구분 | 기술 |
 |------|------|
-| 벡터 DB | ChromaDB |
+| 임베딩 | Sentence Transformers (all-MiniLM-L6-v2) |
+| 벡터 저장소 | 자체 구현 (JSON + NumPy) |
 | 백엔드 | FastAPI (Python) |
 | 프론트엔드 | Vanilla HTML/CSS/JS |
 | LLM | OpenAI / Ollama |
