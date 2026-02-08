@@ -1,0 +1,16 @@
+# 의존성 파일
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# 데이터 디렉토리
+backend/data/
+
+# IDE
+.vscode/
+.idea/
+
+# 시스템 파일
+.DS_Store
+Thumbs.db
